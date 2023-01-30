@@ -12,7 +12,7 @@ namespace ECommerce2
         public string ModelloSpecifico
         {
             get { return _modelloSpecifico; }
-            private set { _modelloSpecifico = value; }
+            set { _modelloSpecifico = value; }
         }
         public override Product Clone()
         {
