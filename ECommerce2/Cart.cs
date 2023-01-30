@@ -12,7 +12,7 @@ namespace ECommerce2
         private const int MAXCARR = 999;
         private string _id;
         private int currentLenght;
-        private Product[] _prod;
+        private Product[] _prod
 
         //properties
         public string Id
