@@ -26,5 +26,19 @@ namespace ECommerce2
         {
             ModelloSpecifico = modello;
         }
+        public override float PrezzoScontato()
+        {
+            float tmp = base.PrezzoScontato();
+            if (DateTime.Now.DayOfWeek == DayOfWeek.Monday)
+            {
+                float sconto = (tmp * 5) / 100;
+                tmp-= sconto;
+            }
+            return tmp;
+        }
+        public override string ToString()
+        {
+            return base.ToString() + ";" + ModelloSpecifico + ";";
+        }
     }
 }

@@ -1,0 +1,17 @@
+C:\Users\colombi.19314.PALEOCAPA\Desktop\ECommerce2\ECommerce2\bin\Debug\net6.0-windows\ECommerce2.exe
+C:\Users\colombi.19314.PALEOCAPA\Desktop\ECommerce2\ECommerce2\bin\Debug\net6.0-windows\ECommerce2.deps.json
+C:\Users\colombi.19314.PALEOCAPA\Desktop\ECommerce2\ECommerce2\bin\Debug\net6.0-windows\ECommerce2.runtimeconfig.json
+C:\Users\colombi.19314.PALEOCAPA\Desktop\ECommerce2\ECommerce2\bin\Debug\net6.0-windows\ECommerce2.dll
+C:\Users\colombi.19314.PALEOCAPA\Desktop\ECommerce2\ECommerce2\bin\Debug\net6.0-windows\ECommerce2.pdb
+C:\Users\colombi.19314.PALEOCAPA\Desktop\ECommerce2\ECommerce2\obj\Debug\net6.0-windows\ECommerce2.csproj.AssemblyReference.cache
+C:\Users\colombi.19314.PALEOCAPA\Desktop\ECommerce2\ECommerce2\obj\Debug\net6.0-windows\ECommerce2.Form1.resources
+C:\Users\colombi.19314.PALEOCAPA\Desktop\ECommerce2\ECommerce2\obj\Debug\net6.0-windows\ECommerce2.csproj.GenerateResource.cache
+C:\Users\colombi.19314.PALEOCAPA\Desktop\ECommerce2\ECommerce2\obj\Debug\net6.0-windows\ECommerce2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\colombi.19314.PALEOCAPA\Desktop\ECommerce2\ECommerce2\obj\Debug\net6.0-windows\ECommerce2.AssemblyInfoInputs.cache
+C:\Users\colombi.19314.PALEOCAPA\Desktop\ECommerce2\ECommerce2\obj\Debug\net6.0-windows\ECommerce2.AssemblyInfo.cs
+C:\Users\colombi.19314.PALEOCAPA\Desktop\ECommerce2\ECommerce2\obj\Debug\net6.0-windows\ECommerce2.csproj.CoreCompileInputs.cache
+C:\Users\colombi.19314.PALEOCAPA\Desktop\ECommerce2\ECommerce2\obj\Debug\net6.0-windows\ECommerce2.dll
+C:\Users\colombi.19314.PALEOCAPA\Desktop\ECommerce2\ECommerce2\obj\Debug\net6.0-windows\refint\ECommerce2.dll
+C:\Users\colombi.19314.PALEOCAPA\Desktop\ECommerce2\ECommerce2\obj\Debug\net6.0-windows\ECommerce2.pdb
+C:\Users\colombi.19314.PALEOCAPA\Desktop\ECommerce2\ECommerce2\obj\Debug\net6.0-windows\ECommerce2.genruntimeconfig.cache
+C:\Users\colombi.19314.PALEOCAPA\Desktop\ECommerce2\ECommerce2\obj\Debug\net6.0-windows\ref\ECommerce2.dll

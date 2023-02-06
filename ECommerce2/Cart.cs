@@ -12,7 +12,9 @@ namespace ECommerce2
         private const int MAXCARR = 999;
         private string _id;
         private int currentLenght;
-        private Product[] _prod
+        private Product[] _prod;
+        private DateTime _dataOdierna;
+        private float prezzoOriginale;
 
         //properties
         public string Id
@@ -30,21 +32,6 @@ namespace ECommerce2
             }
         }
 
-        public Product[] Products
-        {
-            get
-            {
-                Product[] p = new Product[currentLenght];
-                for (int i = 0; i < currentLenght; i++)
-                {
-                    p[i] = _prod[i];
-                }
-                return p;
-            }
-            //set{
-            // 
-            //}
-        }
 
         //constructors
         public Cart(string id)
@@ -142,7 +129,15 @@ namespace ECommerce2
             else
                 throw new Exception("Product not found");
         }
-
+        public float GetPrezzo()
+        {
+            float prezzo = 0;
+            for(int i=0; i < currentLenght; i++)
+            {
+                prezzo += _prod[i].PrezzoScontato();
+            }
+            return prezzo;
+        }
 
 
 

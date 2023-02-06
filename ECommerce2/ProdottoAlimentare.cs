@@ -40,6 +40,32 @@ namespace ECommerce2
         {
             return new ProdottoAlimentare(this);
         }
+        public override float PrezzoScontato()
+        {
+            float tmp = base.PrezzoScontato();
+            if (DateTime.Now.CompareTo(DataScadenza) < 0)
+            {
+                if (DateTime.Now.AddDays(-7).CompareTo(DataScadenza) >= 0)
+                {
+                    float sconto = (tmp * 50) / 100;
+                    tmp -= sconto;  
+                }
+            }
+            return tmp;
+        }
+        public override string ToString()
+        {
+            string stringa = base.ToString();
+            for (int i = 0; i < Ingredienti.Length; i++)
+            {
+                if (Ingredienti[i] != null)
+                {
+                    stringa += Ingredienti[i] + ";";
 
+                }
+                else break;
+            }
+            return stringa + DataScadenza.ToString() + ";";
+        }
     }
 }

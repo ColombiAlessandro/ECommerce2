@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\colombi.19314\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\colombi.19314\\.nuget\\packages"
+      "C:\\Users\\colombi.19314.PALEOCAPA\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\colombi.19314.PALEOCAPA\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true

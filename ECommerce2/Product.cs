@@ -144,10 +144,13 @@ namespace ECommerce2
         }
 
         //ToString
-        public override string ToString()
+        public virtual string ToString()
         {
             return "Product:" + Id + ";" + Name + ";" + Manufacturer + ";" + Description + ";" + Price;
         }
-
+        public virtual float PrezzoScontato()
+        {
+            return Price;
+        }
     }
 }
