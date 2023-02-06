@@ -26,7 +26,7 @@ namespace ECommerce2
             list.View = View.Details;
             list.FullRowSelect = true;
 
-            String[] intestazione = new string[] { "ID", "NOME", "PREZZO", "DESCRIZIONE", "TIPO PRODOTTO" };
+            String[] intestazione = new string[] { "ID", "NOME", "PREZZO", "DESCRIZIONE", "TIPO PRODOTTO", "ALTRO" };
             for (int i = 0; i < intestazione.Length; i++)
             {
                 list.Columns.Add(intestazione[i]);
@@ -35,6 +35,45 @@ namespace ECommerce2
             list.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
 
             list.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+        }
+        public void updateCarrView(Product[] products)
+        {
+
+            list.Items.Clear();
+            list.View = View.Details;
+            list.FullRowSelect = true;
+            for (int i = 0; i < products.Length; i++)
+            {
+                if (!(products[i] is ProdottoAlimentare))
+                {
+                    ListViewItem item = new ListViewItem(products[i].ToString().Split(";"));
+                    list.Items.Add(item);
+                } 
+                
+            }
+
+            list.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
+
+            list.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+
+        }
+
+        private void aggiungiButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tipoBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(tipoBox.Text=="Prodotto alimentare")
+            {
+                scadenzaLabel.Visible = true;
+                dateTimePicker1.Visible = true;
+            } else
+            {
+                scadenzaLabel.Visible = false;
+                dateTimePicker1.Visible = false;
+            }
         }
     }
 }

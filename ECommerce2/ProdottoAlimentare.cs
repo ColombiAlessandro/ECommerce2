@@ -56,15 +56,6 @@ namespace ECommerce2
         public override string ToString()
         {
             string stringa = base.ToString();
-            for (int i = 0; i < Ingredienti.Length; i++)
-            {
-                if (Ingredienti[i] != null)
-                {
-                    stringa += Ingredienti[i] + ";";
-
-                }
-                else break;
-            }
             return stringa + DataScadenza.ToString() + ";";
         }
     }

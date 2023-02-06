@@ -35,6 +35,15 @@
             this.prezzoBox = new System.Windows.Forms.NumericUpDown();
             this.aggiungiButton = new System.Windows.Forms.Button();
             this.list = new System.Windows.Forms.ListView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.scadenzaLabel = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.prezzoBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,6 +59,7 @@
             this.tipoBox.Name = "tipoBox";
             this.tipoBox.Size = new System.Drawing.Size(199, 23);
             this.tipoBox.TabIndex = 1;
+            this.tipoBox.SelectedIndexChanged += new System.EventHandler(this.tipoBox_SelectedIndexChanged);
             // 
             // idBox
             // 
@@ -102,6 +112,7 @@
             this.aggiungiButton.TabIndex = 7;
             this.aggiungiButton.Text = "Aggiungi";
             this.aggiungiButton.UseVisualStyleBackColor = true;
+            this.aggiungiButton.Click += new System.EventHandler(this.aggiungiButton_Click);
             // 
             // list
             // 
@@ -111,11 +122,100 @@
             this.list.TabIndex = 8;
             this.list.UseCompatibleStateImageBehavior = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(13, 5);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(18, 15);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "ID";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(13, 62);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(67, 15);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Descrizione";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(203, 5);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(64, 15);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Produttore";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(203, 62);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(41, 15);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Prezzo";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(590, 5);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(93, 15);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Tipo di prodotto";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(385, 24);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(169, 23);
+            this.textBox3.TabIndex = 15;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(385, 5);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(32, 15);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "Varie";
+            // 
+            // scadenzaLabel
+            // 
+            this.scadenzaLabel.AutoSize = true;
+            this.scadenzaLabel.Location = new System.Drawing.Point(385, 62);
+            this.scadenzaLabel.Name = "scadenzaLabel";
+            this.scadenzaLabel.Size = new System.Drawing.Size(95, 15);
+            this.scadenzaLabel.TabIndex = 17;
+            this.scadenzaLabel.Text = "Data di scadenza";
+            this.scadenzaLabel.Visible = false;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CustomFormat = "";
+            this.dateTimePicker1.Location = new System.Drawing.Point(385, 81);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 23);
+            this.dateTimePicker1.TabIndex = 18;
+            this.dateTimePicker1.Value = new System.DateTime(2023, 2, 6, 0, 0, 0, 0);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(983, 574);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.scadenzaLabel);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.list);
             this.Controls.Add(this.aggiungiButton);
             this.Controls.Add(this.prezzoBox);
@@ -140,5 +240,14 @@
         private NumericUpDown prezzoBox;
         private Button aggiungiButton;
         private ListView list;
+        private Label label1;
+        private Label label2;
+        private Label label3;
+        private Label label4;
+        private Label label5;
+        private TextBox textBox3;
+        private Label label6;
+        private Label scadenzaLabel;
+        private DateTimePicker dateTimePicker1;
     }
 }
